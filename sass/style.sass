@@ -14,12 +14,14 @@ header
    align-content: center
    align-items: center
    justify-content: space-around
-   a
+   .menu_link
       text-decoration: none
       color: #ffffff
       font-size: 21px
-      
       text-transform: uppercase
+      outline: none; /* Для синий ободки */
+      border: 0;
+      background: transparent;
 
 body
    display: flex
@@ -66,14 +68,23 @@ body
          left: 50%
          margin-right: -50%
          transform: translate(-50%, -50%)
+      audio
+         color: #ffffff
 
-
+         position: absolute
+         top: 50%
+         left: 50%
+         margin-right: -50%
+         transform: translate(-50%, -50%)
+         visibility: hidden
       &:hover
          border-radius: 29px
          background-color: unset
          transition-duration: 1000ms
          a
-            color: #cb3537
+            visibility: hidden
+         audio
+            visibility: visible
       .content
          flex: 1 0 auto
 

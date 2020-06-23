@@ -7,19 +7,29 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
    <link rel="stylesheet" href="css/bahnschrift-wakamaifondue.css">
    <link rel="stylesheet" href="css/style.css">
+   <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+   <script type="text/javascript" src="js/js.js"></script>
+
    <title>Татьяна Иванцова</title>
 </head>
 
 <body>
    <header class="bahnschrift-semibold">
       <a href="#" class="menu_link">Татьяна Иванцова</a>
-      <a href="#" class="menu_link">прослушать демо</a>
-      <a href="#" class="menu_link">+380507316427</a>
+      <audio src="audio/track1.mp3"></audio>
+      <button onclick="play()" class="demo menu_link">прослушать демо</button>
+      <a href="#" class="menu_link">+38 050 731 64 27</a>
    </header>
    <div class="main">
       <h1 class="bahnschrift-semibold"> Татьяна Иванцова</h1>
       <h2>Авторские песни под заказ</h2>
-      <div class="listen_button"><a href="">Прослушать Демо</a></div>
+      <div class="listen_button"><a href="">Прослушать Демо</a>
+         <audio autoplay controls preload="metadata">
+            <source src="audio/Ни о чем не жалею.mp3" type="audio/mp3" />
+            <p>This browser does not support the audio element.</p>
+         </audio>
+
+      </div>
       <div class="main_text bahnschrift">
          <p> на любую тему, к любому торжеству </p>
 
@@ -31,3 +41,7 @@
 </body>
 
 </html>
+
+<script>
+
+</script>
